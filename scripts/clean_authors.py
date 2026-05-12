@@ -1,3 +1,10 @@
+"""
+Clean author column:
+  - Convert the string into upper case
+  - Change special characters
+  - Split co-author books
+  - Delete specific noice substrings from the authors names, such as `INTRODUCTION BY`
+"""
 import unicode
 import re
 import pandas as pd
