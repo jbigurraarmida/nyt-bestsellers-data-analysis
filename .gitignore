@@ -1,0 +1,5 @@
+.env
+*.parquet
+*.db
+__pycache__/
+.ipynb_checkpoints/
