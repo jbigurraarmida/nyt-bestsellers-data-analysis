@@ -42,13 +42,19 @@ The dataset covers the period from 2010 to 2025.
 - Google Colab
 - Tableau
 
+## Environment variables
+Create a `.env` file and add your NYT API key:
+```env
+NYT_API_KEY=your_api_key_here
+```
+
 ## Getting the data
 To obtain the book data, we used the New York Times API, and the `requests` library.
 
 ```Python
 while date <= end:
 	params = {
-		"published_date": date,
+		"published_date": date.strftime("%Y-%m-%d"),
 		"api-key": api_key
 	}
 	r = requests.get(url, params=params)
