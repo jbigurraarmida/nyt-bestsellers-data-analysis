@@ -120,3 +120,9 @@ But after doing so, there was yet another problem: there were books with text su
 
 /tableau
     Tableau dashboard files
+
+## Images
+Analizing the top authors, with the most books that reached rank #1 in the New York Times Bestseller list, we got the following graphs. The Top authors in physical books:
+![Top Authors in Physical Books, 2010-2025](images/top_authors_physical_books.png)
+And the top authors in digital books:
+![Top Authors in Digital Books, 2010-2025](images/top_authors_digital_books.png)
