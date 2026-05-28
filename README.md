@@ -122,7 +122,26 @@ But after doing so, there was yet another problem: there were books with text su
     Tableau dashboard files
 
 ## Images
+### Top Authors
 Analizing the top authors, with the most books that reached rank #1 in the New York Times Bestseller list, we got the following graphs. The Top authors in physical books:
 ![Top Authors in Physical Books, 2010-2025](images/top_authors_physical_books.png)
 And the top authors in digital books:
 ![Top Authors in Digital Books, 2010-2025](images/top_authors_digital_books.png)
+### Dominance of #1 spot of the list
+#### Physical Books
+Looking at the number of weeks for each year that these top authors had a book at rank #1 of the list across the categories on the same period of time, we have:  
+##### Hardcover Fiction
+![Number of Weeks at Rank #1 in Hardcover, 2010-2025](images/weeks-at-1-hardcover.png)
+
+##### Paperback Trade Fiction
+![Number of Weeks at Rank #1 in Paperback Trade, 2010-2025](images/weeks-at-1-paperback-trade.png)
+
+##### Paperback Mass-Market Fiction
+![Number of Weeks at Rank #1 in Paperback Mass-Market Fiction, 2010-2025](images/weeks-at-1-paperback-mass-market.png)
+
+#### Digital Books
+##### E-Books
+![Number of Weeks at Rank #1 in E-Book Fiction, 2010-2025](images/weeks-at-1-ebook.png)
+
+##### Audio
+![Number of Weeks at Rank #1 in Audio Fiction, 2010-2025](images/weeks-at-1-audio.png)
