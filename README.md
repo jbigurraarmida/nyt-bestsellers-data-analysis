@@ -123,11 +123,13 @@ But after doing so, there was yet another problem: there were books with text su
 
 ## Images
 ### Top Authors
-Analizing the top authors, with the most books that reached rank #1 in the New York Times Bestseller list, we got the following graphs. The Top authors in physical books:
+We got the authors that had the most number of books in the period of 2010-2025 in the number 1 rank in the Fiction categories (Hardcover, Paperback Trade, Paperback Mass-Market, E-Book, and Audio), and got the following graphs. The Top authors in physical books:
 ![Top Authors in Physical Books, 2010-2025](images/top_authors_physical_books.png)
 And the top authors in digital books:
 ![Top Authors in Digital Books, 2010-2025](images/top_authors_digital_books.png)
+
 ### Dominance of #1 spot of the list
+Other important question we wanted to answer was how long these top authors remained on the number 1 spot for all the years between 2010-2025.
 #### Physical Books
 Looking at the number of weeks for each year that these top authors had a book at rank #1 of the list across the categories on the same period of time, we have:  
 ##### Hardcover Fiction
@@ -145,3 +147,27 @@ Looking at the number of weeks for each year that these top authors had a book a
 
 ##### Audio
 ![Number of Weeks at Rank #1 in Audio Fiction, 2010-2025](images/weeks-at-1-audio.png)
+
+### Top Imprints
+Similar to the "Top Authors" situation, we wanted to know which Publishing Groups had the most books on number 1 spot on the list in that period of time, obtaining the following for the physical books:
+![Top Publishing Groups in Fiction for Physical Books, 2010-2025](images/top_pub_groups_print.png)
+And the digital books:
+![Top Publishing Groups in Fiction for Digital Books, 2010-2025](images/top_pub_groups_digital.png)
+
+#### Top Imprints for each of the "Big Five" Publishing Groups
+We also wanted to know what publisher/imprints had the most books on the number 1 spot for each of the "Big 5" publishing groups (Penguin Random House, Hachette, Simon & Schuster, Macmillan, and HarperCollins).
+
+Obtaining the following for Penguin Random House:
+![Top Penguin Random House Imprints for Fiction Books, 2010-2025](images/top_prh_imprints.png)
+
+Hachette:
+![Top Hachette Imprints for Fiction Books, 2010-2025](images/top_hachette_imprints.png)
+
+Simon & Schuster:
+![Top Simon & Schuster Imprints for Fiction Books, 2010-2025](images/top_simon_schuster_imprints.png)
+
+Macmillan:
+![Top Macmillan Imprints for Fiction Books, 2010-2025](images/top_macmillan_imprints.png)
+
+HarperCollins:
+![Top HarperCollins Imprints for Fiction Books, 2010-2025](images/top_harpercollins_imprints.png)
