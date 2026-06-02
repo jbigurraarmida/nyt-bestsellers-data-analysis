@@ -171,3 +171,6 @@ Macmillan:
 
 HarperCollins:
 ![Top HarperCollins Imprints for Fiction Books, 2010-2025](images/top_harpercollins_imprints.png)
+
+Finally, looking at all the imprints in general, including those not part of the "Big 5" we got:
+![Top Imprints for Fiction Books, 2010-2025](images/top_imprints.png)
