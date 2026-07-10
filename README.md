@@ -174,3 +174,9 @@ HarperCollins:
 
 Finally, looking at all the imprints in general, including those not part of the "Big 5" we got:
 ![Top Imprints for Fiction Books, 2010-2025](images/top_imprints.png)
+
+### The Impact the *Game of Thrones* TV adaptation had over the NYT Bestseller rankings of the books
+We wanted to see if the rankings went up during the airing of the show, or when the trailers/teaser trailers were dropped, to determine if there was any type of impact of the show with the books ranking on the list.
+Here is an example of the trajectory the book *A Feast for Crows* (book #4 of the *A Song of Ice and Fire* series which the show was based on) on the "Paperback Mass-Market Fiction" list:
+!['A Feast for Crows' trajectory on the Paperback Mass-Market Fiction list](images/FFC_MMPB.png)
+
