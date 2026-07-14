@@ -179,4 +179,7 @@ Finally, looking at all the imprints in general, including those not part of the
 We wanted to see if the rankings went up during the airing of the show, or when the trailers/teaser trailers were dropped, to determine if there was any type of impact of the show with the books ranking on the list.
 Here is an example of the trajectory the book *A Feast for Crows* (book #4 of the *A Song of Ice and Fire* series which the show was based on) on the "Paperback Mass-Market Fiction" list:
 !['A Feast for Crows' trajectory on the Paperback Mass-Market Fiction list](images/FFC_MMPB.png)
-
+We can see how during a season being aired the book rankings go up, as well as some spikes in the rankings when a trailer or teaser trailer for a new season is published.
+We also plotted the trajectory of the book rankings within the seasons with vertical lines representing each episode, to see the spikes in the ranking as well as the episode aired that may have caused it. For example, the print editions for *A Game of Thrones* during the first season of the show:
+!['A Game of Thrones' print editions trajectories during the first season of the show](images/GOT_S1.png)
+In this plot, we can see the rankings of the book on both the Mass-Market and the Trade Paperback ranking list. The fact that the Mass-Market rankings is higher than the Trade may be because Mass-Market paperback are cheaper and therefore more likely that people will give it a chance than with the trade, which is more expensive. But then, during episode 4 week, Trade's ranking goes up from ~rank 30 to ~10, regardless if the format is not the cheaper option, almost getting the same rank the book has in the other format.
