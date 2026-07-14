@@ -125,8 +125,11 @@ But after doing so, there was yet another problem: there were books with text su
 ### Top Authors
 We got the authors that had the most number of books in the period of 2010-2025 in the number 1 rank in the Fiction categories (Hardcover, Paperback Trade, Paperback Mass-Market, E-Book, and Audio), and got the following graphs. The Top authors in physical books:
 ![Top Authors in Physical Books, 2010-2025](images/top_authors_physical_books.png)
+The top authors for physical books are no surprise to anyone that have entered a bookstore: James Patterson, David Baldacci, Stephen King, Nora Roberts... They are all authors that have a lot of books out there, in many cases having entire shelves for their books. What is a surprise, though, is that the number of books during this period of time in the Hardcover list does not equate in the paperback lists: we don't see those Patterson's 47 titles on any of the paperbacks. This could be because their books are published first in hardcover, and the paperbacks we see on the list are his backlist and are sold regardless if they are new books republished as paperbacks.
+
 And the top authors in digital books:
 ![Top Authors in Digital Books, 2010-2025](images/top_authors_digital_books.png)
+Another thing of note we can see, is that on the paperback lists, or in the digital editions, we see more authors like Ana Huang, Colleen Hoover, Ali Hazelwood, Sarah J. Maas, Ernest Cline, Rebecca Yarros, Andy Weir, that in some cases "compete" with the same number of books on the list as the big-name authors—with their success, or "boom" achieved through people talking about the books online through YouTube, TikTok, Instagram, among other social media platforms.
 
 ### Dominance of #1 spot of the list
 Other important question we wanted to answer was how long these top authors remained on the number 1 spot for all the years between 2010-2025.
@@ -177,9 +180,11 @@ Finally, looking at all the imprints in general, including those not part of the
 
 ### The Impact the *Game of Thrones* TV adaptation had over the NYT Bestseller rankings of the books
 We wanted to see if the rankings went up during the airing of the show, or when the trailers/teaser trailers were dropped, to determine if there was any type of impact of the show with the books ranking on the list.
+
 Here is an example of the trajectory the book *A Feast for Crows* (book #4 of the *A Song of Ice and Fire* series which the show was based on) on the "Paperback Mass-Market Fiction" list:
 !['A Feast for Crows' trajectory on the Paperback Mass-Market Fiction list](images/FFC_MMPB.png)
 We can see how during a season being aired the book rankings go up, as well as some spikes in the rankings when a trailer or teaser trailer for a new season is published.
+
 We also plotted the trajectory of the book rankings within the seasons with vertical lines representing each episode, to see the spikes in the ranking as well as the episode aired that may have caused it. For example, the print editions for *A Game of Thrones* during the first season of the show:
 !['A Game of Thrones' print editions trajectories during the first season of the show](images/GOT_S1.png)
 In this plot, we can see the rankings of the book on both the Mass-Market and the Trade Paperback ranking list. The fact that the Mass-Market rankings is higher than the Trade may be because Mass-Market paperback are cheaper and therefore more likely that people will give it a chance than with the trade, which is more expensive. But then, during episode 4 week, Trade's ranking goes up from ~rank 30 to ~10, regardless if the format is not the cheaper option, almost getting the same rank the book has in the other format.
