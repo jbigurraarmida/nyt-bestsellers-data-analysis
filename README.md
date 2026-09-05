@@ -39,6 +39,7 @@ The dataset covers the period from 2010 to 2025.
   - Pandas
   - SQLite3
   - Matplotlib
+- MySQL Workbench
 - Google Colab
 - Tableau
 
@@ -120,6 +121,175 @@ But after doing so, there was yet another problem: there were books with text su
 
 /tableau
     Tableau dashboard files
+
+## SQL queries
+### Top 1 Publishing groups with most books on the NYT list for each category
+The following query is to find out the top publishing groups for each category on the list, excluding Penguin Random House as it's the dominant publishing group in almost all categories—the result shows only the categories where the top publishing groups isn't PRH.
+
+```SQL
+WITH book_counts AS (
+	SELECT publishing_group, list_name, COUNT(DISTINCT isbn13) AS book_count
+	FROM nyt_bestsellers_final
+	GROUP BY publishing_group, list_name
+),
+ranks AS (
+	SELECT publishing_group, book_count, list_name,
+		RANK() OVER (PARTITION BY list_name ORDER BY book_count DESC) AS pub_group_rank
+	FROM book_counts
+)
+SELECT list_name, publishing_group, book_count
+FROM ranks
+WHERE pub_group_rank = 1
+AND publishing_group != 'PENGUIN RANDOM HOUSE'
+ORDER BY list_name;
+```
+![Top publishing groups by category](/images/top-publishing_groups.png)
+## Top author with most books for each category
+
+```SQL
+WITH book_counts AS (
+	SELECT author, list_name, COUNT(DISTINCT isbn13) AS book_count
+    FROM nyt_bestsellers_final
+    GROUP BY author, list_name
+),
+ranks AS (
+	SELECT author, book_count, list_name,
+    RANK() OVER (PARTITION BY list_name ORDER BY book_count DESC) AS author_rank
+    FROM book_counts
+)
+SELECT list_name, author, book_count
+FROM ranks
+WHERE author_rank = 1
+	AND book_count > 1
+    AND author != 'OTHERS'
+ORDER BY list_name;
+```
+![Top authors with most books 1](/images/top-authors-most-books_1.png)
+![Top authors with most books 2](/images/top-authors-most-books_2.png)
+![Top authors with most books 3](/images/top-authors-most-books_3.png)
+![Top authors with most books 4](/images/top-authos-most-books_4.png)
+![Top authors with most books 5](/images/top-authors-most-books_5.png)
+
+## Top authors with the most weeks at rank 1 in each category
+```SQL
+WITH authors_ranked1 AS (
+	SELECT DISTINCT author, list_name, COUNT(*) AS weeks_at_1
+    FROM nyt_bestsellers_final
+    WHERE `rank` = 1
+    GROUP BY author, list_name
+),
+top_authors_in_1 AS (
+	SELECT author, list_name, weeks_at_1,
+		RANK() OVER(PARTITION BY list_name ORDER BY weeks_at_1 DESC) AS author_rank
+	FROM authors_ranked1
+)
+SELECT list_name, author, weeks_at_1
+FROM top_authors_in_1
+WHERE author_rank = 1
+ORDER BY list_name;
+```
+![Top authors with most weeks #1 rank 1](/images/top-authors-most-weeks-at-1_1.png)
+![Top authors with most weeks #1 rank 2](/images/top-authors-most-weeks-at-1_2.png)
+![Top authors with most weeks #1 rank 3](/images/top-authors-most-weeks-at-1_3.png)
+
+## Average number of weeks a book remains #1 for each category
+```SQL
+WITH books_ranked1 AS (
+	SELECT DISTINCT isbn13, list_name, COUNT(*) AS weeks_at_1
+    FROM nyt_bestsellers_final
+    WHERE `rank` = 1
+    GROUP BY isbn13, list_name
+)
+SELECT list_name, AVG(weeks_at_1) AS avg_weeks_at_1
+FROM books_ranked1
+GROUP BY list_name
+ORDER BY avg_weeks_at_1 DESC;
+```
+![Average weeks at #1 rank 1](/images/avg-at-1_1.png)
+![Average weeks at #1 rank 2](/images/avg-at-1_2.png)
+![Average weeks at #1 rank 3](/images/avg-at-1_3.png)
+
+## Average weeks on the list for each category
+```SQL
+WITH books_in_list AS (
+	SELECT DISTINCT isbn13, list_name, COUNT(*) AS weeks_in_list
+    FROM nyt_bestsellers_final
+    GROUP BY isbn13, list_name
+)
+SELECT list_name, AVG(weeks_in_list) AS avg_weeks_in_list
+FROM books_in_list
+GROUP BY list_name
+ORDER BY avg_weeks_in_list DESC;
+```
+
+![Average weeks on list 1](/images/avg-weeks_1.png)
+![Average weeks on list 2](/images/avg-weeks_2.png)
+![Average weeks on list 3](/images/avg-weeks_3.png)
+
+## Titles with most time on the list for each category that at some point reached rank 1, the number of weeks on the list, and average rank
+```SQL
+WITH books_reached_rank1 AS (
+	SELECT DISTINCT isbn13
+    FROM nyt_bestsellers_final
+    WHERE `rank` = 1
+),
+week_count AS (
+	SELECT nyt.list_name, 
+		nyt.title,
+        nyt.author,
+		br1.isbn13, 
+		COUNT(*) AS weeks,
+        AVG(`rank`) AS avg_rank
+    FROM books_reached_rank1 AS br1
+		JOIN nyt_bestsellers_final AS nyt ON br1.isbn13=nyt.isbn13
+	GROUP BY isbn13, nyt.list_name, nyt.title, nyt.author
+),
+time_rank AS (
+	SELECT list_name, author, title, weeks, avg_rank,
+		RANK() OVER(PARTITION BY list_name ORDER BY weeks DESC) AS book_week_rank
+	FROM week_count
+)
+SELECT list_name, author, title, weeks, avg_rank
+FROM time_rank
+WHERE book_week_rank = 1
+ORDER BY list_name;
+```
+![Books with most weeks 1](/images/books-most-weeks_1.png)
+![Books with most weeks 2](/images/books-most-weeks_2.png)
+![Books with most weeks 3](/images/books-most-weeks_3.png)
+![Books with most weeks 4](/images/books-most-weeks_4.png)
+
+## Most present authors for each category that didn't get books ranked 1
+```SQL
+WITH number_one_authors AS (
+	SELECT DISTINCT author, list_name
+    FROM nyt_bestsellers_final
+    WHERE `rank` = 1
+),
+not_one_authors AS (
+	SELECT n.author, n.list_name, COUNT(*) AS weeks
+    FROM nyt_bestsellers_final AS n
+	WHERE `rank` > 1
+		AND NOT EXISTS (
+			SELECT 1 FROM number_one_authors AS noa
+            WHERE noa.author=n.author
+        )
+	GROUP BY n.author, n.list_name
+),
+author_ranks AS (
+	SELECT list_name, author, weeks,
+		RANK() OVER(PARTITION BY list_name ORDER BY weeks DESC) AS a_ranks
+	FROM not_one_authors
+)
+SELECT list_name, author, weeks
+FROM author_ranks
+WHERE a_ranks = 1
+ORDER BY list_name;
+```
+![Authors with most weeks, not ranked 1 1](/images/authors-never1_1.png)
+![Authors with most weeks, not ranked 1 2](/images/authors-never1_2.png)
+![Authors with most weeks, not ranked 1 3](/images/authors-never1_3.png)
+![Authors with most weeks, not ranked 1 4](/images/authors-never1_4.png)
 
 ## Images
 ### Top Authors
