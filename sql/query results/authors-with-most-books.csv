@@ -1,54 +1,54 @@
 list_name,author,book_count
-"Advice, How-To & Miscellaneous","MARK HYMAN",10
-"Advice, How-To & Miscellaneous","BRENE BROWN",10
+"Advice, How-To & Miscellaneous","MARK HYMAN",11
 Animals,"JAMES BOWEN",4
 "Audio Fiction","DAVID BALDACCI",16
 "Audio Nonfiction","BILL O'REILLY",9
-Business,"MICHAEL LEWIS",6
 Business,"JOCKO WILLINK",6
+Business,"MICHAEL LEWIS",6
 Celebrities,"HOLLY MADISON",4
-"Children's & Young Adult Series","RICK RIORDAN",43
-"Children's Chapter Books","JAMES PATTERSON",6
-"Children's Chapter Books","LAUREN CONRAD",6
-"Children's Chapter Books","RICK RIORDAN",6
-"Children's Middle Grade","JAMES PATTERSON",10
-"Children's Middle Grade E-Book","RICK RIORDAN",5
-"Children's Middle Grade Hardcover","RICK RIORDAN",15
-"Children's Middle Grade Hardcover","JAMES PATTERSON",15
-"Children's Middle Grade Paperback","KATE DICAMILLO",2
-"Children's Middle Grade Paperback","CHRIS GRABENSTEIN",2
-"Children's Middle Grade Paperback","SHARON M DRAPER",2
-"Children's Paperback Books","ALYSON NOEL",4
-"Children's Paperback Books","JANE O'CONNOR",4
-"Children's Paperback Books","JAMES PATTERSON",4
-"Children's Paperback Books","L J SMITH",4
-"Children's Paperback Books","VICTORIA KANN",4
-"Children's Picture Books","MO WILLEMS",42
+"Children's & Young Adult Series","RICK RIORDAN",2
+"Children's Middle Grade Hardcover","ALAN GRATZ",3
+"Children's Picture Books","DREW DAYWALT",2
+"Children's Picture Books","GREGORY E LANG",2
+"Children's Picture Books","ERIC CARLE",2
+"Children’s Chapter Books","JAMES PATTERSON",6
+"Children’s Chapter Books","RICK RIORDAN",6
+"Children’s Chapter Books","LAUREN CONRAD",6
+"Children’s Middle Grade","JAMES PATTERSON",10
+"Children’s Middle Grade E-Book","RICK RIORDAN",5
+"Children’s Middle Grade Hardcover","RICK RIORDAN",15
+"Children’s Middle Grade Hardcover","JAMES PATTERSON",15
+"Children’s Middle Grade Paperback","SHARON M DRAPER",2
+"Children’s Middle Grade Paperback","CHRIS GRABENSTEIN",2
+"Children’s Middle Grade Paperback","KATE DICAMILLO",2
+"Children’s Paperback Books","L J SMITH",4
+"Children’s Paperback Books","ALYSON NOEL",4
+"Children’s Paperback Books","VICTORIA KANN",4
+"Children’s Paperback Books","JAMES PATTERSON",4
+"Children’s Picture Books","MO WILLEMS",42
 "Combined Hardcover & Paperback Fiction","JAMES PATTERSON",44
 "Combined Hardcover & Paperback Nonfiction","MALCOLM GLADWELL",5
 "Combined Print & E-Book Fiction","JAMES PATTERSON",232
 "Combined Print & E-Book Nonfiction","BILL O'REILLY",22
 "Combined Print Fiction","STIEG LARSSON",3
-"Crime and Punishment","ERIK LARSON",3
-"Crime and Punishment","GINA DEJESUS",3
-"Crime and Punishment","KEVIN SULLIVAN",3
-"Crime and Punishment","LINDA HIRSHMAN",3
-"Crime and Punishment","JEFFREY TOOBIN",3
-"Crime and Punishment","JON KRAKAUER",3
 "Crime and Punishment","JILL LEOVY",3
+"Crime and Punishment","JON KRAKAUER",3
+"Crime and Punishment","ANN RULE",3
+"Crime and Punishment","AMANDA BERRY",3
+"Crime and Punishment","JEFFREY TOOBIN",3
 "Crime and Punishment","WILLIAM J MANN",3
 "Crime and Punishment","BILL BROWDER",3
+"Crime and Punishment","LINDA HIRSHMAN",3
+"Crime and Punishment","KEVIN SULLIVAN",3
 "Crime and Punishment","MARY JORDAN",3
-"Crime and Punishment","AMANDA BERRY",3
-"Crime and Punishment","ANN RULE",3
+"Crime and Punishment","ERIK LARSON",3
+"Crime and Punishment","GINA DEJESUS",3
 Culture,"WEDNESDAY MARTIN",3
 Culture,"MATT ZOLLER SEITZ",3
 "E-Book Fiction","JAMES PATTERSON",57
-"E-Book Nonfiction","GLENN BECK",8
-"E-Book Nonfiction","MARTIN DUGARD",8
-"E-Book Nonfiction","BILL O'REILLY",8
-Education,"JON KRAKAUER",3
+"E-Book Nonfiction","GLENN BECK",9
 Education,"AMY ELLIS NUTT",3
+Education,"JON KRAKAUER",3
 Education,"FRANCES E JENSEN",3
 Education,"PAUL TOUGH",3
 Espionage,"ANNIE JACOBSEN",5
@@ -56,32 +56,33 @@ Expeditions,"ERIK LARSON",4
 Expeditions,"DAVID MCCULLOUGH",4
 "Fashion, Manners and Customs","KATE ANDERSEN BROWER",4
 "Food and Diet","MELISSA HARTWIG",5
+"Food and Diet","MARK HYMAN",5
 "Food and Diet","YOTAM OTTOLENGHI",5
-"Games and Activities","MEGAN MILLER",4
 "Games and Activities","VARIOUS ILLUSTRATORS",4
+"Games and Activities","MEGAN MILLER",4
 "Graphic Books and Manga","DAV PILKEY",23
 "Hardcover Advice & Misc.","JOYCE MEYER",7
 "Hardcover Advice & Misc.","ZHI GANG SHA",7
-"Hardcover Business Books","NIALL FERGUSON",2
-"Hardcover Business Books","DAN HEATH",2
-"Hardcover Business Books","DAVE RAMSEY",2
 "Hardcover Business Books","CHIP HEATH",2
+"Hardcover Business Books","NIALL FERGUSON",2
+"Hardcover Business Books","DAVE RAMSEY",2
+"Hardcover Business Books","DAN HEATH",2
 "Hardcover Fiction","JAMES PATTERSON",130
-"Hardcover Nonfiction","BILL O'REILLY",20
+"Hardcover Nonfiction","BILL O'REILLY",19
 Health,"ANTHONY WILLIAM",3
 Humor,"MINDY KALING",5
 "Indigenous Americans","DEE BROWN",3
 "Love and Relationships","ANDY COHEN",3
+"Love and Relationships","GLENNON DOYLE MELTON",3
 "Love and Relationships","WEDNESDAY MARTIN",3
 "Love and Relationships","MINDY KALING",3
-"Love and Relationships","GLENNON DOYLE MELTON",3
 Manga,"HIRO MASHIMA",48
 "Mass Market","WILLIAM W JOHNSTONE",72
 "Middle Grade Paperback","KATHERINE APPLEGATE",6
 "Paperback Advice & Misc.","DAVID ZINCZENKO",9
 "Paperback Advice & Misc.","MATT GOULDING",9
 "Paperback Business Books","MICHAEL LEWIS",5
-"Paperback Mass-Market Fiction","DEBBIE MACOMBER",73
+"Paperback Mass-Market Fiction","DEBBIE MACOMBER",77
 "Paperback Nonfiction","MICHAEL LEWIS",13
 "Paperback Trade Fiction","JAMES PATTERSON",93
 "Parenthood and Family","JEFFREY BROWN",4
@@ -93,10 +94,10 @@ Manga,"HIRO MASHIMA",48
 Science,"YUVAL NOAH HARARI",8
 "Sports and Fitness","THE EDITORS OF SPORTS ILLUSTRATED",9
 Travel,"BILL BRYSON",8
-"Young Adult","JOHN GREEN",9
+"Young Adult","JOHN GREEN",10
 "Young Adult E-Book","RAINBOW ROWELL",3
 "Young Adult E-Book","JOHN GREEN",3
-"Young Adult Hardcover","MARIE LU",8
-"Young Adult Hardcover","JASON REYNOLDS",8
 "Young Adult Hardcover","HOLLY BLACK",8
+"Young Adult Hardcover","JASON REYNOLDS",8
+"Young Adult Hardcover","MARIE LU",8
 "Young Adult Paperback","NATASHA PRESTON",10

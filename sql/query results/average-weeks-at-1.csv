@@ -3,21 +3,21 @@ list_name,avg_weeks_at_1
 "Race and Civil Rights",21.6000
 "Indigenous Americans",21.5000
 Education,20.6667
+Expeditions,17.7500
 Science,16.5500
+Business,16.3953
 "Middle Grade Paperback",16.3684
 "Games and Activities",16.3333
-Business,16.2791
-Expeditions,16.1250
 "Food and Diet",15.8125
 "Parenthood and Family",15.1667
 "Sports and Fitness",14.5833
 "Hardcover Business Books",14.3636
-"Young Adult Paperback",14.2143
+"Young Adult Paperback",14.3571
 "Combined Print Fiction",14.0000
 "Love and Relationships",13.1000
 Culture,12.6923
-"Paperback Nonfiction",11.8352
-Travel,11.5833
+Travel,12.6667
+"Paperback Nonfiction",11.8462
 Animals,11.4545
 "Graphic Books and Manga",11.3929
 Health,11.3636
@@ -26,36 +26,39 @@ Health,11.3636
 Humor,10.2857
 "Crime and Punishment",10.0000
 Celebrities,9.7059
-"Children's Middle Grade Paperback",8.6667
-"Children's Middle Grade",8.5000
+"Children’s Middle Grade Paperback",8.6667
+"Children’s Middle Grade",8.5000
 "Religion, Spirituality and Faith",8.2941
 Espionage,8.2667
+"Fashion, Manners and Customs",8.1111
 "Audio Fiction",7.9804
 "Young Adult",7.7778
-"Fashion, Manners and Customs",7.2222
-"Children's Middle Grade Hardcover",7.0500
-"Children's Paperback Books",6.7353
+"Children’s Middle Grade Hardcover",7.0875
+"Children’s Paperback Books",6.7353
 "Combined Hardcover & Paperback Nonfiction",6.4643
-"Paperback Advice & Misc.",5.9400
-"Paperback Graphic Books",5.8929
+"Paperback Advice & Misc.",6.2200
+"Paperback Graphic Books",6.1875
 "Mass Market",5.8065
 "Paperback Trade Fiction",5.6013
-"Children's & Young Adult Series",5.2544
-"Children's Picture Books",4.9130
-"Children's Chapter Books",4.4545
-"Hardcover Advice & Misc.",4.4091
-"Advice, How-To & Miscellaneous",4.2952
-"Young Adult Hardcover",4.2028
-"Children's Middle Grade E-Book",4.1667
+"Children’s & Young Adult Series",5.2544
+"Children’s Picture Books",4.9082
+"Hardcover Advice & Misc.",4.5606
+"Children’s Chapter Books",4.4545
+"Advice, How-To & Miscellaneous",4.3193
+"Young Adult Hardcover",4.2238
+"Children’s Middle Grade E-Book",4.1667
+"Hardcover Graphic Books",4.0874
 Politics,4.0000
-"Hardcover Graphic Books",3.8415
-"E-Book Nonfiction",3.7250
-"Hardcover Nonfiction",3.7047
-"Combined Print & E-Book Nonfiction",3.2038
+"E-Book Nonfiction",3.7500
+"Hardcover Nonfiction",3.7416
+"Combined Print & E-Book Nonfiction",3.2516
 "Paperback Mass-Market Fiction",2.7063
 "Combined Hardcover & Paperback Fiction",2.3654
 "Hardcover Fiction",2.0082
-Manga,1.9181
+"Children's Middle Grade Hardcover",2.0000
+"Children's Picture Books",2.0000
+"Children's & Young Adult Series",2.0000
+Manga,1.9353
 "E-Book Fiction",1.8211
 "Combined Print & E-Book Fiction",1.7883
 "Young Adult E-Book",1.7442
