@@ -258,7 +258,7 @@ ORDER BY list_name;
 ![Books with most weeks 2](/images/books-most-weeks_2.png)
 ![Books with most weeks 3](/images/books-most-weeks_3.png)
 ![Books with most weeks 4](/images/books-most-weeks_4.png)
-
+![Books with most weeks 5](/images/books-most-weeks_5.png)
 ## Most present authors for each category that didn't get books ranked 1
 ```SQL
 WITH number_one_authors AS (
@@ -289,7 +289,7 @@ ORDER BY list_name;
 ![Authors with most weeks, not ranked 1 1](/images/authors-never1_1.png)
 ![Authors with most weeks, not ranked 1 2](/images/authors-never1_2.png)
 ![Authors with most weeks, not ranked 1 3](/images/authors-never1_3.png)
-![Authors with most weeks, not ranked 1 4](/images/authors-never1_4.png)
+![Authors with most weeks, not ranked 1 4](/images/authors-never1_4.png)	
 
 ## Images
 ### Top Authors
